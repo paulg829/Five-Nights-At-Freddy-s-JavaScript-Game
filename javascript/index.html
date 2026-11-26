@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five Nights At Freddy's</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="sectionOne">
+        <div class="welcome">
+        <h1>Welcome to Freddy Fazbear's Pizzeria</h1>
+        </div>
+        <div class="start">
+        <button id="startButton">START GAME</button>
+        </div>
+    </section>
+
+    <section id="sectionTwo" class="hidden">
+        
+            <h1 id="nightTitle">Night One</h1>
+
+            <h2 id="clock">12:00 AM</h2>
+
+            <h3 id="powerDisplay">Power: 100%</h3>
+
+            <h3 id="usageDisplay">Power Usage: |</h3>
+
+            <div class="office">
+                <div class="officeWall">
+                    <p>CELEBRATE!</p>
+                    <p>FREDDY FAZBEAR'S PIZZERIA</p>
+                </div>
+
+                <div class="leftDoorway">
+                    <div id="foxyVisual" class="hidden">FOXY IS RUNNING!</div>
+                    <div id="leftLightBeam"></div>
+                    <div id="leftDoorVisual"></div>
+                    <div id="bonnieVisual" class="hidden">BONNIE!</div>
+                </div>
+
+                <div class="middleOffice">
+                    <div class="desk">
+                            <div class="fan">
+                                <div class="fanBlade"></div>
+                            </div>
+                    <h2>SECURITY OFFICE</h2>
+                    </div>
+                </div>
+
+                <div class="rightDoorway">
+                    <div id="rightLightBeam"></div>
+                    <div id="chicaVisual" class="hidden">CHICA!</div>
+                <div id="rightDoorVisual"></div>
+                </div>
+
+            </div>
+
+            <div class="controlPanel">
+            
+                <button id="leftDoorButton">Left Door</button>
+                <button id="rightDoorButton">Right Door</button>
+                <button id="leftLightButton">Left Light</button>
+                <button id="rightLightButton">Right Light</button>
+                <button id="cameraButton">Camera</button>
+                
+            </div>
+
+            <div id="powerOutDisplay" class="hidden">
+                <h1>POWER OUT</h1>
+                <p>The building has lost electricity...</p>
+            </div>
+
+        
+    </section>
+
+    <section id="jumpscareScreen" class="hidden">
+        <img id="jumpscareImage" src="../assets/images/bonnie.png">
+    </section>
+
+    <section id="cameraSection" class="hidden">
+
+        <div id="cameraStatic" class="hidden"></div>
+
+        <h1>Security Cameras</h1>
+        <h2 id="cameraRoom">CAM 1 - Show Stage</h2>
+
+        <div id="cameraMap">
+
+            <div class="hallway">
+                HALLWAY
+            </div>
+
+            <div class="mapRoom">
+                <button id="mapCam1">CAM 1</button>
+                <p>Show Stage</p>
+            </div>
+
+            <div class="mapRoom">
+                <button id="mapCam2">CAM 2</button>
+                <p>Dining Area</p>
+            </div>
+
+            <div class="mapRoom">
+                <button id="mapCam3">CAM 3</button>
+                <p>Backstage</p>
+            </div>
+
+            <div class="mapRoom">
+                <button id="mapCam4">CAM 4</button>
+                <p>West Hall</p>
+            </div>
+
+            <div class="mapRoom">
+                <button id="mapCam5">CAM 5</button>
+                <p>Restrooms</p>
+            </div>
+
+            <div class="mapRoom">
+                <button id="mapCam6">CAM 6</button>
+                <p>Kitchen</p>
+            </div>
+
+            <div class="mapRoom">
+                <button id="mapCam7">CAM 7</button>
+                <p>Pirate Cove</p>
+            </div>
+
+        </div>
+
+        <div id="cameraView" class="cameraView">
+            <p id="cameraFeedText">Camera Feed</p>
+            <img id="bonnieCameraImage" src="../assets/images/bonnie.png" class="hidden">
+            <img id="chicaCameraImage" src="../assets/images/chica.png" class="hidden">
+            <img id="foxyCameraImage" src="../assets/images/foxy.png" class="hidden">
+            <p id="foxyStatus">Foxy is behind the curtains.</p>
+            <img id="freddyCameraImage" src="../assets/images/freddy.png" class="hidden">
+        </div>
+
+        <div id="bonnieLocation">
+            Bonnie is on the Show Stage
+        </div>
+
+        <button id="backToOfficeButton">Back to Office</button>
+    </section>
+
+
+    <section id="gameOverScreen" class="hidden">
+        <h1>GAME OVER</h1>
+        <p>You were caught by an animatronic.</p>
+        <button id="restartButton">TRY AGAIN</button>
+        <button id="gameOverMenuButton">MAIN MENU</button>
+    </section>
+
+    <section id="victoryScreen" class="hidden">
+        <h1>6:00 AM</h1>
+        <h2>You survived the night!</h2>
+        <button id="nextNightButton">CONTINUE</button>
+        <button id="victoryMenuButton">MAIN MENU</button>
+    </section>
+
+    <audio id="doorSound" src="../assets/sound/door.mp3"></audio>
+    <audio id="lightSound" src="../assets/sound/light.mp3"></audio>
+    <audio id="cameraSound" src="../assets/sound/camera.mp3"></audio>
+    <audio id="jumpscareSound" src="../assets/sound/jumpscare.mp3"></audio>
+    <audio id="ambienceSound" src="../assets/sounds/ambience.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
