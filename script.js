@@ -645,16 +645,16 @@ function showJumpscare(character) {
     stopCharacterTimers();
 
     if (character === "Bonnie") {
-        jumpscareImage.src = "../assets/images/bonnie.png";
+        jumpscareImage.src = "assets/images/bonnie.png";
     }
     else if (character === "Chica") {
-        jumpscareImage.src = "../assets/images/chica.png";
+        jumpscareImage.src = "assets/images/chica.png";
     }
     else if (character === "Foxy") {
-        jumpscareImage.src = "../assets/images/foxy.png";
+        jumpscareImage.src = "assets/images/foxy.png";
     }
     else if (character === "Freddy") {
-        jumpscareImage.src = "../assets/images/freddy.png";
+        jumpscareImage.src = "assets/images/freddy.png";
     }
 
     jumpscareScreen.classList.remove("hidden");
